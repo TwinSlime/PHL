@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us for more information about Pennsylvania.">
+  <title>Contact Us – Explore Pennsylvania</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Main Navigation">
+      <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="capital.html">Capital City</a></li>
+        <li><a href="city1.html">Philadelphia</a></li>
+        <li><a href="city2.html">Pittsburgh</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or need more information, please fill out the form below. We're here to help!</p>
+
+      <form id="contact-form" action="submit_form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="confirm-email">Confirm Email Address:</label>
+        <input type="email" id="confirm-email" name="confirm-email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2025 Explore Pennsylvania</p>
+    <p class="works-cited">
+      Works Cited: "About Pennsylvania." PA.gov; "City of Harrisburg." HarrisburgPA.gov; "City of Philadelphia." Phila.gov; "City of Pittsburgh." PittsburghPA.gov.
+    </p>
+  </footer>
+  
+  <script src="document.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
